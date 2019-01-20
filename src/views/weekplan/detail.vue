@@ -33,9 +33,10 @@
             <Row>
               <i-col span="18">
                 <div class="title">定一个小目标，这个月先赚它一个亿。</div>
-                <Progress v-if="index%3==0" :percent="45" status="active" />
-                <Progress v-if="index%3==1" :percent="100" />
-                <Progress v-if="index%3==2" :percent="60" status="wrong" />
+                <Progress v-if="index%3==0" :percent="form.items[index]['status']" status="active" />
+                <Progress v-if="index%3==1" :percent="form.items[index]['status']" />
+                <Progress v-if="index%3==2" :percent="form.items[index]['status']" status="wrong" />
+                <Slider v-model="form.items[index]['status']"></Slider>
               </i-col>
               <i-col class="form-buttons" span="4" offset="1">
                   <i-switch size="large">
@@ -72,17 +73,17 @@ export default {
             {
                 value: '',
                 index: 1,
-                status: 1
+                status: 10
             },
             {
                 value: '',
                 index: 1,
-                status: 1
+                status: 20
             },
             {
                 value: '',
                 index: 1,
-                status: 1
+                status: 30
             }
         ]
       },

@@ -74,7 +74,12 @@
     <!-- 评论区 -->
     <Tabs value="comment">
         <TabPane label="网友评论" name="comment">
-            <Input v-model="comment" type="textarea" :rows="4" placeholder="我有话说" />
+            <i-form ref="formDynamic" :model="form" :label-width="0">
+                <Input v-model="form.comment" type="textarea" :rows="4" placeholder="我有话说" />
+                <FormItem class="form-bottom-btns">
+                    <Button type="primary" @click="handleSubmit('formDynamic')">发布</Button>
+                </FormItem>
+            </i-form>
         </TabPane>
     </Tabs>
     <!-- 评论列表 -->
@@ -109,8 +114,15 @@
     name: 'cp-article',
     data(){
         return {
-            comment: '',
+            form: {
+                comment: ''
+            },
             commentList: _createCommentList(10)
+        }
+    },
+    methods: {
+        handleSubmit(){
+            console.log('发布')
         }
     }
   }

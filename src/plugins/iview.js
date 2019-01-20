@@ -61,10 +61,13 @@ import {
   Badge,
   Carousel,
   CarouselItem,
-  Card
+  Card,
+  BackTop
 } from 'iview'
 
 let components = [Row, Col, Layout, Header, Content, Sider, Footer, Menu, MenuGroup, Submenu, MenuItem, Icon, Breadcrumb, BreadcrumbItem, Tabs, TabPane, Page, Steps, Step, Input, Radio, RadioGroup, Checkbox, CheckboxGroup, CellGroup, Cell, Select, Slider, Option, Switch, Table, AutoComplete, DatePicker, TimePicker, Cascader, InputNumber, Rate, Upload, ColorPicker, Form, FormItem, Message, Notice, Modal, Tooltip, Poptip, Progress, Tag, Spin, Button, ButtonGroup, Divider, Dropdown, DropdownMenu, DropdownItem, Avatar, Badge, Carousel, CarouselItem, Card]
+
+Vue.component('i-backTop', BackTop)
 
 components.map((item) => {
   if (typeof item.name !== 'undefined') {

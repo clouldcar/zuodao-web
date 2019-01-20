@@ -97,6 +97,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "member_login" */ './views/member/login.vue')
     },
     {
+      path: '/member/wx_login',
+      name: 'member_wx_login',
+      component: () => import(/* webpackChunkName: "member_wx_login" */ './views/member/wxLogin.vue')
+    },
+    {
       path: '/member/supplement',
       name: 'member_supplement',
       component: () => import(/* webpackChunkName: "member_supplement" */ './views/member/supplement.vue')

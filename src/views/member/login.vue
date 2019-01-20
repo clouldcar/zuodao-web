@@ -53,7 +53,7 @@ export default {
             })
         },
         register(){
-
+            this.$router.push('/member/wx_login')
         },
         forget(){
 

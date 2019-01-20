@@ -14,7 +14,6 @@ Vue.config.productionTip = false
 
 Vue.use(VueAwesomeSwiper /* { default global options } */)
 Vue.use(iviewArea)
-console.log(iviewArea)
 
 new Vue({
   router,

@@ -19,6 +19,8 @@
                 </div>
             </div>
         </div>
+        <!-- pager -->
+        <Page class="cp-pager" :total="40" size="small" show-elevator show-sizer />
     </div>
 </template>
 

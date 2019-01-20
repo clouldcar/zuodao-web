@@ -11,6 +11,7 @@
       </cp-layout>
       <cp-footer></cp-footer>
     </layout>
+    <i-backTop></i-backTop>
   </div>
 </template>
 
@@ -35,12 +36,12 @@ export default {
         }
         .page-content{
         background-color: #fff;
-        .flex-content{
-            display: flex;
-            .flex-item{
-            flex: 1;
+            .flex-content{
+                display: flex;
+                .flex-item{
+                flex: 1;
+                }
             }
-        }
         }
     }
 </style>
