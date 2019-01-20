@@ -1,0 +1,7 @@
+.ellipsis(@clamp: 1){
+    overflow: hidden;
+    text-overflow:ellipsis;//文本溢出显示省略号
+    display: -webkit-box;
+    -webkit-line-clamp: @clamp;
+    -webkit-box-orient: vertical;
+}

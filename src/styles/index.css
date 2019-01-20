@@ -1,0 +1,30 @@
+.zd-app .ivu-layout {
+  background-color: #f1f1f1;
+}
+.zd-app .ivu-layout-header {
+  background-color: #fff;
+}
+.zd-app .ivu-menu-horizontal {
+  line-height: 62px;
+}
+.zd-app .pd15 {
+  padding: 15px;
+}
+.zd-app .cp-pager {
+  padding: 30px 0;
+  text-align: center;
+}
+.zd-app img {
+  width: 100%;
+}
+.zd-app .form-bottom-btns {
+  text-align: right;
+}
+.zd-app .week-tag {
+  margin: 0 25px 20px 25px;
+}
+html,
+body,
+.zd-app {
+  height: 100%;
+}
